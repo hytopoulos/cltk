@@ -122,8 +122,8 @@ class BetaCodeReplacer:
 
     def __init__(
         self,
-        pattern=Optional[list[tuple[str, str]]],
-        reorder_pattern=Optional[list[tuple[str, str]]],
+        pattern: Optional[list[tuple[str, str]]] = None,
+        reorder_pattern: Optional[list[tuple[str, str]]] = None,
     ):
         if not pattern:
             pattern = BETA_REPLACE
